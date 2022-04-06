@@ -19,4 +19,4 @@ requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-git-labeler= "python_git_labeler.git_labeler:main"
+git-labeler= "git_labeler.script:main"
