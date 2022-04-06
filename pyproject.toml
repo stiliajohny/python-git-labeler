@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "git-labeler"
-version = "0.1.0"
+version = "0.1.1"
 description = "Apply, change, remove labels on multiple or single repos in one go"
 authors = ["John Stilia <stilia.johny@gmail.com>"]
 license = "GPL-3"
