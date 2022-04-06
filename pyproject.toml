@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "git-labeler"
+version = "0.1.0"
+description = "Apply, change, remove labels on multiple or single repos in one go"
+authors = ["John Stilia <stilia.johny@gmail.com>"]
+license = "GPL-3"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+GitPython = "^3.1.27"
+pyfiglet = "^0.8.post1"
+pyaml = "^21.10.1"
+requests = "^2.27.1"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+git-labeler= "python_git_labeler.git_labeler:main"

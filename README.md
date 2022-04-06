@@ -10,7 +10,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/stiliajohny/python-git-labeler">
-    <img src="https://raw.githubusercontent.com/stiliajohny/python-git-labeler/main/.assets/logo.png" alt="Main Logo" width="80" height="80">
+    <img src="https://raw.githubusercontent.com/stiliajohny/python-git-labeler/master/.assets/logo.png" alt="Main Logo" width="80" height="80">
   </a>
 
   <h3 align="center">python-git-labeler</h3>
@@ -21,8 +21,6 @@
     <a href="./README.md"><strong>Explore the docs »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/stiliajohny/python-git-labeler">View Demo</a>
-    ·
     <a href="https://github.com/stiliajohny/python-git-labeler/issues/new?labels=i%3A+bug&template=1-bug-report.md">Report Bug</a>
     ·
     <a href="https://github.com/stiliajohny/python-git-labeler/issues/new?labels=i%3A+enhancement&template=2-feature-request.md">Request Feature</a>
@@ -50,31 +48,14 @@
 
 ## About The Project
 
-[![python-git-labeler Screen Shot][product-screenshot]](./.assets/screenshot.png)
-
-<!--
-There are many great README templates available on GitHub, however, I didn't find one that really suit my needs so I created this enhanced one. I want to create a README template so amazing that it'll be the last one you ever need.
-
-Here's why:
-
-- Your time should be focused on creating something amazing. A project that solves a problem and helps others
-- You shouldn't be doing the same tasks over and over like creating a README from scratch
-- You should element DRY principles to the rest of your life :smile:
-
-Of course, no one template will serve all projects since your needs may be different. So I'll be adding more in the near future. You may also suggest changes by forking this repo and creating a pull request or opening an issue.
-
-A list of commonly used resources that I find helpful are listed in the acknowledgements.
--->
+This tool was created out of necessity to manipulate labels on multiple repos.
 
 ### Built With
 
-<!--
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-
-- [Bootstrap](https://getbootstrap.com)
-- [JQuery](https://jquery.com)
-- [Laravel](https://laravel.com)
--->
+- Python
+- Poetry
+- Git
+- Yaml
 
 ---
 
@@ -82,46 +63,15 @@ This section should list any major frameworks that you built your project using.
 
 ## Getting Started
 
-<!--
-This is an example of how you may give instructions on setting up your project locally.
-To get a local copy up and running follow these simple example steps.
--->
-
 ### Prerequisites
 
-<!--
-
-This is an example of how to list things you need to use the software and how to install them.
-
-- npm
-
-```sh
-npm install npm@latest -g
-```
--->
+- Install git cli
+- Install python
 
 ### Installation
 
-<!--
-1. Get a free API Key at [https://example.com](https://example.com)
-2. Clone the repo
-
-```sh
-git clone https://github.com/your_username_/Project-Name.git
-```
-
-3. Install NPM packages
-
-```sh
-npm install
-```
-
-4. Enter your API in `config.js`
-
-```JS
-const API_KEY = 'ENTER YOUR API';
-```
--->
+- Install the app with pip
+  `pip3 install --user git-labeler`
 
 ---
 
@@ -129,11 +79,30 @@ const API_KEY = 'ENTER YOUR API';
 
 ## Usage
 
-<!--
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+A config file is required in order to use the application
+example:
 
-_For more examples, please refer to the [Documentation](https://example.com)_
--->
+```yaml
+github_api_url: https://api.github.com
+labels:
+  - color: ff0000
+    description: This is a description
+    name: example1
+    state: present
+  - color: ff0000
+    description: This is a description
+    name: example2
+    state: present
+  - color: ff0000
+    description: This is a description
+    name: example3
+    state: absent
+repos:
+  - name: test1
+    url: git@github.com:stiliajohny/test1.git
+  - name: test2
+    url: git@github.com:stiliajohny/test2.git
+```
 
 ---
 
