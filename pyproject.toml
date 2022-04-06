@@ -4,6 +4,14 @@ version = "0.1.0"
 description = "Apply, change, remove labels on multiple or single repos in one go"
 authors = ["John Stilia <stilia.johny@gmail.com>"]
 license = "GPL-3"
+keywords = ["git", "multi-push"]
+readme = "README.md"
+include = [
+    "LICENSE.md",
+    "README.md",
+]
+homepage = "https://stiliajohny.github.io/python-git-labeler "
+repository = "https://github.com/stiliajohny/python-git-labeler.git "
 
 [tool.poetry.dependencies]
 python = "^3.10"
